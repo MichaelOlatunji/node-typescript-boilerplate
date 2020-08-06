@@ -1,0 +1,26 @@
+{
+  "name": "transact",
+  "version": "1.0.0",
+  "description": "A seller and shopper platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist && tsc -p .",
+    "start:dev": "nodemon",
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts"
+  },
+  "author": "Michael Olatunji",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
